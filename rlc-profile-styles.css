@@ -1,0 +1,382 @@
+
+
+<style>
+
+.nsk-profiles {
+    Layout by: NSK;
+}
+
+/* Ocultar la sección 'General Info' */
+#ctl00_oCPH1_tbDetailsSection>tr>td>div[style*="General Info"],
+#ctl00_oCPH1_tbDetailsSection>tr>td>div[style="margin: 0px 0px 10px 0px;"] {
+    display: none !important;
+}
+
+/* Ocultar los títulos específicos */
+div[style="position: relative; top: 3px;"] {
+    display: none !important;
+}
+
+/* Ocultar elementos con el estilo específico */
+div[style="height: 21px; background: #000000 url('/images/t2/sec-header-bg-bk.gif') repeat-x; color: #FFFFFF; font-weight: bold;"] {
+    display: none !important;
+}
+
+td.columnsWidening img,
+td.columnsWidening object {
+    max-width: 100% !important;
+    width: expression(this.width > 400 ? 400 : true);
+}
+
+body {
+    background: url(http://www.profilerehab.com/pb/myspace/plain/skinny_black_pink_layout.jpg) repeat-y fixed center top;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: eb6488 !important;
+}
+
+table {
+    background-color: transparent !important;
+    /* Quitar fondo de todas las tablas */
+    border-style: none !important;
+    /* Quitar borde de todas las tablas */
+}
+
+table table {
+    background-color: transparent !important;
+    /* Quitar fondo de las tablas anidadas */
+    border: 0px;
+    /* Sin borde */
+}
+
+td.text table,
+td.text table td {
+    width: 300px;
+    padding: 0px;
+    font-size: 11px;
+}
+
+td.text table table table table,
+td.text table table table table td {
+    width: 0px;
+}
+
+table table table table td {
+    filter: none;
+}
+
+table table table table {
+    border: 0px;
+}
+
+td.text td.text table table div,
+td.text td.text table table a img {
+    height: px;
+    width: 75px !important;
+    border-width: 0px;
+}
+
+img {
+    border: none;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+td.text table table table tr td a {
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+
+td.text table table table tr td a:hover {
+    color: eb6488 !important;
+    border-bottom: none;
+}
+
+table,
+tr,
+td {
+    background-color: transparent;
+    /* Fondo transparente */
+    border-style: none;
+}
+
+table table table {
+    background-color: transparent;
+    /* Fondo transparente */
+    background-image: url(##);
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-color: eb6488;
+    border-style: solid;
+    border-width: 2px;
+}
+
+table table table table {
+    background-image: none;
+    /* Sin imagen de fondo */
+    background-color: transparent;
+    /* Fondo transparente */
+    border-style: none;
+}
+
+table,
+tr,
+td,
+li,
+p,
+div,
+.text {
+    color: eb6488;
+    line-height: 13px;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+}
+
+td.text {
+    vertical-align: top;
+}
+
+.blacktext12 {
+    color: 000000 !important;
+    font-size: 11px;
+    _font-size: 11px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: center top;
+    line-height: 15px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.nametext {
+    color: eb6488 !important;
+    font-size: 14px;
+    _font-size: 14px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: left;
+    line-height: 47px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: none;
+    background-position: ;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.btext {
+    color: eb6488 !important;
+    font-size: 12px;
+    _font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: left;
+    line-height: 44px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.orangetext15 {
+    color: eb6488 !important;
+    font-size: 12px;
+    _font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: left;
+    line-height: 20px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.whitetext12 {
+    color: eb6488 !important;
+    font-size: 12px;
+    _font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: left;
+    line-height: 25px;
+    padding: ;
+    margin: ;
+    letter-spacing: 1px;
+    display: block;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    text-transform: uppercase;
+}
+
+.redtext,
+.redbtext {
+    color: eb6488;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+.blacktext10 {
+    color: eb6488;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: ;
+}
+
+.lightbluetext8 {
+    color: eb6488;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+a:link,
+a:visited,
+a.redlink:active,
+a.redlink:visited,
+a.redlink:link,
+a.searchlinksmall:link,
+a.searchlinksmall:visited {
+    color: eb6488 !important;
+    *border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    padding: ;
+}
+
+a:hover,
+a.redlink:hover,
+a.searchlinksmall:hover,
+a:hover img {
+    color: eb6488 !important;
+    border-bottom-color: transparent;
+    text-decoration: none;
+    padding: 0;
+}
+
+a.navbar:active,
+a.navbar:visited,
+a.navbar:link {
+    color: eb6488 !important;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a.navbar:hover {
+    color: eb6488 !important;
+    text-decoration: f1fff7;
+}
+
+div table tr td table {
+    background-color: transparent !important;
+}
+
+div table tr td table a {
+    zpadding: 0 !important;
+}
+
+div table tr td table font {
+    color: eb6488 !important;
+}
+
+</style><style type="text/css">.contactTable {
+    width: 300px !important;
+    height: 150px !important;
+    padding: 0px !important;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.contactTable table,
+table.contactTable td {
+    padding: 0px !important;
+    border: 0px;
+    background-color: transparent !important;
+    /* Fondo transparente para la tabla */
+    background-image: none;
+    line-height: normal;
+}
+
+.contactTable a img {
+    visibility: hidden;
+    border: 0px !important;
+}
+
+.contactTable a {
+    display: block;
+    height: 31px;
+    width: 115px;
+    background-color: transparent;
+    border-bottom: none !important;
+}
+
+.contactTable .text {
+    font-size: 1px !important;
+}
+
+.contactTable .text,
+.contactTable a,
+.contactTable img {
+    filter: none !important;
+}
+
+.contactTable a:hover {
+    background-color: transparent;
+}
+
+.contactTable .whitetext12 {
+    display: none;
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Remove specific elements */
+img[src="/images/t2/sec-header-arrow-bk.gif"],
+#ctl00_oMasterHeaderDiv,
+.MPHeaderNavCell,
+#ctl00_oMasterAdDiv,
+.MPToolsBar,
+#ctl00_oCPH1_pnlSexyStuff,
+
+/* Keep only 'Member Since' in the member stats */
+#ctl00_oCPH1_lblSCLastLogin,
+#ctl00_oCPH1_lblLastLogin {
+    display: none !important;
+}
+
+</style><div class="link"><a href="http://profilerehab.com/theme/myspace/skinny_black_pink_layout"><img src="http://www.profilerehab.com/pb/myspace/myspace_backgrounds_link.jpg" /></a></div>
