@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Iframes</title>
+    <title>Galería de Imágenes</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
     <style>
         /* Estilos generales */
         body {
@@ -44,19 +48,25 @@
             color: #fff;
         }
 
-        /* Header con logo centrado */
+        /* Header con SVG ajustado */
         header {
+            position: relative;
+            height: 350px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
             background-color: transparent;
             overflow: hidden;
+            flex-direction: column;
         }
 
-        header img {
-            max-width: 100%;
+        
+
+        .header-img {
+            margin-top: 50px;
+            max-width: 80%;
             height: auto;
+            z-index: 0;
         }
 
         /* Galería de cards */
@@ -79,7 +89,6 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Efecto hover */
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 0 15px 10px rgba(235, 100, 136, 0.7);
@@ -106,24 +115,22 @@
             color: #eb6488;
         }
 
-        /* Ajustes para iframes */
-        .iframe-container {
-            position: relative;
+        .image-container {
             width: 100%;
-            padding-top: 60%;
-            /* Relación de aspecto 3:2 */
+            padding-top: 100%;
+            position: relative;
             overflow: hidden;
             border-radius: 5px;
         }
 
-        .iframe-container iframe {
+        .image-container img {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
             width: 100%;
             height: 100%;
-            border: none;
-            overflow: hidden;
+            object-fit: contain;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -139,17 +146,27 @@
         <a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a>
     </nav>
 
-    <!-- Header con logo centrado -->
+    <!-- Header con SVG modificado -->
     <header>
-        <img src="./img/header-img.png" alt="Logo">
+        <svg width="750" height="350" xmlns="http://www.w3.org/2000/svg" class="header-svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#eb6488;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:white;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" font-family="'Great Vibes', cursive" font-size="100" fill="url(#grad1)"
+                text-anchor="middle" alignment-baseline="middle">Katherine</text>
+        </svg>
+        <img src="/img/header-img.png" alt="Imagen de fondo" class="header-img">
     </header>
 
     <!-- Galería de cards -->
     <div class="gallery">
         <div class="card">
-            <h3>KathernineDesigns</h3>
-            <div class="iframe-container">
-                <iframe src="https://www.utherverse.com/clothing/search.aspx?mid=104458468"></iframe>
+            <h3>KatherineDesigns</h3>
+            <div class="image-container">
+                <img src="./img/logo-Katherine.jpg" alt="KatherineDesigns">
             </div>
             <p>CATALOG</p>
             <a href="https://www.utherverse.com/clothing/search.aspx?mid=104458468" target="_blank">Click here for
@@ -158,8 +175,8 @@
 
         <div class="card">
             <h3>Grupo Hope</h3>
-            <div class="iframe-container">
-                <iframe src="https://katherinefr400.wixsite.com/my-site-19"></iframe>
+            <div class="image-container">
+                <img src="./img/grupoHope.png" alt="Grupo Hope">
             </div>
             <p>Grupo Hope</p>
             <a href="https://katherinefr400.wixsite.com/my-site-19" target="_blank">Click to open</a>

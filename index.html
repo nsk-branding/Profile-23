@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Iframes</title>
+    <title>Galería de Imágenes</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
     <style>
-        /* Estilos generales tomados del CSS proporcionado */
+        /* Estilos generales */
         body {
             background-color: transparent !important;
             margin: 0;
@@ -19,17 +23,14 @@
             color: #eb6488;
         }
 
-        /* Estilo para el navbar */
+        /* Navbar */
         .navbar {
             display: flex;
             justify-content: center;
             background: linear-gradient(to top, rgba(235, 100, 136, 0), rgba(235, 100, 136, 1));
-            /* Degradado de transparente a rosa */
             padding: 20px 0;
-            z-index: 2;
-            /* Asegura que el navbar esté por encima */
             position: relative;
-            /* Para que el z-index funcione */
+            z-index: 2;
         }
 
         .navbar a {
@@ -38,56 +39,43 @@
             font-weight: bold;
             color: #fff;
             border-radius: 5px;
-            /* Bordes redondeados */
             padding: 10px 20px;
-            /* Espaciado interno */
             transition: background-color 0.3s ease;
-            /* Transición suave */
         }
 
         .navbar a:hover {
             background-color: rgba(235, 100, 136, 0.5);
-            /* Color de fondo en hover */
             color: #fff;
-            /* Color de texto en hover */
         }
 
-        /* Estilos para el header con el logo centrado */
+        /* Header con SVG ajustado */
         header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-            background-color: transparent;
-            /* Fondo transparente */
             position: relative;
-            /* Para que el contenido del header esté en relación */
-            overflow: hidden;
-            /* Oculta cualquier contenido que se salga */
-        }
-
-        /* Estilos para el header con el logo centrado */
-        header {
+            height: 350px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
-            background-color: transparent; /* Fondo transparente */
+            background-color: transparent;
+            overflow: hidden;
+            flex-direction: column;
         }
 
-        header img {
-            max-width: 100%;
+
+
+        .header-img {
+            margin-top: 50px;
+            max-width: 80%;
             height: auto;
+            z-index: 0;
         }
 
-        /* Estilos para la galería de cards */
+        /* Galería de cards */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 10px;
             background-color: transparent;
-            /* Fondo transparente */
         }
 
         .card {
@@ -101,10 +89,9 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px 10px rgba(235, 100, 136, 0.7);
         }
 
         .card h3 {
@@ -128,10 +115,22 @@
             color: #eb6488;
         }
 
-        /* Efecto hover: agrandar y agregar glow rosa */
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px 10px rgba(235, 100, 136, 0.7);
+        .image-container {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -147,26 +146,41 @@
         <a href="https://www.utherverse.com/net/search/search.aspx" target="_blank">Search</a>
     </nav>
 
-    <!-- Header con logo centrado -->
+    <!-- Header con SVG modificado -->
     <header>
-        <img src="./img/header-img.png" alt="Logo">
+        <svg width="750" height="350" xmlns="http://www.w3.org/2000/svg" class="header-svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#eb6488;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:white;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" font-family="'Great Vibes', cursive" font-size="100" fill="url(#grad1)"
+                text-anchor="middle" alignment-baseline="middle">Katherine</text>
+        </svg>
+        <img src="/img/header-img.png" alt="Imagen de fondo" class="header-img">
     </header>
 
-    <!-- Galería de cards con iframes -->
+    <!-- Galería de cards -->
     <div class="gallery">
         <div class="card">
-            <h3>KathernineDesigns</h3>
-            <iframe src="https://www.utherverse.com/clothing/search.aspx?mid=104458468"></iframe>
+            <h3>KatherineDesigns</h3>
+            <div class="image-container">
+                <img src="./img/logo-Katherine.jpg" alt="KatherineDesigns">
+            </div>
             <p>CATALOG</p>
-            <a href="https://www.utherverse.com/clothing/search.aspx?mid=104458468" target="_blank">Click here for more..</a>
+            <a href="https://www.utherverse.com/clothing/search.aspx?mid=104458468" target="_blank">Click here for
+                more..</a>
         </div>
+
         <div class="card">
             <h3>Grupo Hope</h3>
-            <iframe src="https://katherinefr400.wixsite.com/my-site-19"></iframe>
-            <p>Grupo Hope </p>
+            <div class="image-container">
+                <img src="./img/grupoHope.png" alt="Grupo Hope">
+            </div>
+            <p>Grupo Hope</p>
             <a href="https://katherinefr400.wixsite.com/my-site-19" target="_blank">Click to open</a>
         </div>
-        <!-- Añadir más cards según sea necesario -->
     </div>
 
 </body>
