@@ -1,0 +1,38 @@
+@keyframes animatedBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad, #f39c12, #f1c40f);
+    background-size: 400% 400%;
+    animation: animatedBackground 15s ease infinite;
+    margin: 0;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+    color: #eb6488;
+}
+
+/* Opcional: añadir efectos de "marble" utilizando pseudo-elementos */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ruta-de-textura-dorada.png') repeat;
+    opacity: 0.3;
+    z-index: -1;
+    animation: animatedBackground 20s ease infinite;
+    pointer-events: none;
+    /* Evita que interfiera con el contenido */
+}
