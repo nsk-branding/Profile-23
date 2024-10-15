@@ -6,6 +6,12 @@
     Layout by: NSK;
 }
 
+
+/* Ocultar la clase específica de Member Stats */
+#ctl00_oCPH1_trMemberStats {
+    display: none !important;
+}
+
 /* Ocultar la sección 'General Info' */
 #ctl00_oCPH1_tbDetailsSection>tr>td>div[style*="General Info"],
 #ctl00_oCPH1_tbDetailsSection>tr>td>div[style="margin: 0px 0px 10px 0px;"] {
@@ -16,6 +22,7 @@
 div[style="position: relative; top: 3px;"] {
     display: none !important;
 }
+
 
 /* Ocultar elementos con el estilo específico */
 div[style="height: 21px; background: #000000 url('/images/t2/sec-header-bg-bk.gif') repeat-x; color: #FFFFFF; font-weight: bold;"] {
