@@ -61,10 +61,18 @@
         }
 
         .header-img {
-            margin-top: 50px;
-            max-width: 80%;
-            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             z-index: 0;
+        }
+
+        .header-svg {
+            position: relative;
+            z-index: 1;
         }
 
         /* Gallery */
@@ -146,6 +154,7 @@
 
     <!-- Header with SVG -->
     <header>
+        <img src="./img/rose gold sparkling circle.png" alt="Background Image" class="header-img">
         <svg width="750" height="350" xmlns="http://www.w3.org/2000/svg" class="header-svg">
             <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -156,7 +165,6 @@
             <text x="50%" y="50%" font-family="'Great Vibes', cursive" font-size="100" fill="url(#grad1)"
                 text-anchor="middle" alignment-baseline="middle">Katherine</text>
         </svg>
-        <img src="/img/header-img.png" alt="Background Image" class="header-img">
     </header>
 
     <!-- Gallery -->
