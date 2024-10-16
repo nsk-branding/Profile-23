@@ -75,6 +75,25 @@
             z-index: 1;
         }
 
+        /* Animation for SVG text */
+        @keyframes gradientAnimation {
+            0% {
+                stop-color: #eb6488;
+            }
+
+            50% {
+                stop-color: #ff99cc;
+            }
+
+            100% {
+                stop-color: #eb6488;
+            }
+        }
+
+        .header-svg:hover #grad1 stop {
+            animation: gradientAnimation 3s infinite;
+        }
+
         /* Gallery */
         .gallery {
             display: grid;
