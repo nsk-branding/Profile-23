@@ -1,6 +1,4 @@
-<style>
-
-.nsk-profiles {
+<style>.nsk-profiles {
     /* Layout by: NSK; */
 }
 
@@ -51,14 +49,23 @@ table table {
 }
 
 /* Fondo transparente para todas las tablas */
-table, tr, td {
+table,
+tr,
+td {
     background-color: transparent !important;
     border-style: none;
 }
 
 /* Estilos generales para textos */
-table, tr, td, li, p, div, .text {
-    color: #eb6488;
+table,
+tr,
+td,
+li,
+p,
+div,
+.text {
+    color: #FFFFFF;
+    /* Cambiado a blanco */
     line-height: 13px;
     font-size: 11px;
     font-family: "Lucida Grande", Verdana, sans-serif;
@@ -71,15 +78,28 @@ img {
 }
 
 /* Estilos de enlaces */
-a:link, a:visited, a:hover, a:active {
-    color: #eb6488 !important;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #FFFFFF !important;
+    /* Cambiado a blanco */
     text-decoration: none;
     border-bottom: none !important;
 }
 
 /* Estilos específicos de las clases de texto */
-.blacktext12, .nametext, .btext, .orangetext15, .whitetext12, .redtext, .redbtext, .blacktext10, .lightbluetext8 {
-    color: #eb6488 !important;
+.blacktext12,
+.nametext,
+.btext,
+.orangetext15,
+.whitetext12,
+.redtext,
+.redbtext,
+.blacktext10,
+.lightbluetext8 {
+    color: #FFFFFF !important;
+    /* Cambiado a blanco */
     font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     text-transform: uppercase;
 }
@@ -94,7 +114,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* Estilo para los elementos dentro de la tabla de contacto */
-.contactTable table, table.contactTable td {
+.contactTable table,
+table.contactTable td {
     padding: 0px !important;
     border: 0px;
     background-color: transparent !important;
@@ -121,8 +142,6 @@ img[src="/images/t2/sec-header-arrow-bk.gif"],
 #ctl00_oCPH1_pnlSexyStuff {
     display: none !important;
 }
-
-
 
 /* Aplica un borde rosado a todos los contenedores de regalo */
 .giftContainer,
@@ -152,8 +171,6 @@ img[src="/images/t2/sec-header-arrow-bk.gif"],
     border: none;
 }
 
-
-
 /* Opcionalmente, aplica el borde a la imagen del regalo */
 .giftImageContainer {
     border: 2px solid #eb6488;
@@ -166,7 +183,12 @@ img[src="/images/t2/sec-header-arrow-bk.gif"],
     border: 2px solid #eb6488;
 }
 
+#ctl00_oCPH1_imgPicture {
+    border-radius: 5px;
+}
 
+.PDispImage .scaled100 {
+    border-radius: 5px;
+}
 
 </style>
-
