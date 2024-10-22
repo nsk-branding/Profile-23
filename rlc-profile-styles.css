@@ -122,9 +122,51 @@ img[src="/images/t2/sec-header-arrow-bk.gif"],
     display: none !important;
 }
 
+
+
+/* Aplica un borde rosado a todos los contenedores de regalo */
+.giftContainer,
+.rounded,
+.corner,
+.giftbody {
+    border: 2px solid #eb6488;
+}
+
+/* Aplica el borde a la cabecera del contenedor */
+.giftbody div[style*="background: #000000"] {
+    border: 2px solid #eb6488;
+}
+
+/* Ajusta los bordes de los elementos del slider */
+.giftSlider .corner {
+    border-color: #eb6488;
+}
+
+/* Borde rosado para el contenedor de la descripción */
+.description {
+    border: 2px solid #eb6488;
+}
+
+/* Quitar el borde del contenedor de la imagen del regalo */
+.spanThird.giftImageContainer {
+    border: none;
+}
+
+
+
+/* Opcionalmente, aplica el borde a la imagen del regalo */
+.giftImageContainer {
+    border: 2px solid #eb6488;
+    padding: 5px;
+    /* Añadir un poco de padding si es necesario */
+}
+
+/* Borde de las imágenes internas */
+.giftImage {
+    border: 2px solid #eb6488;
+}
+
+
+
 </style>
-<div class="link">
-    <a href="http://profilerehab.com/theme/myspace/skinny_black_pink_layout">
-        <img src="http://www.profilerehab.com/pb/myspace/myspace_backgrounds_link.jpg" />
-    </a>
-</div>
+
